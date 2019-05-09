@@ -1,0 +1,33 @@
+/* styles for all devices and mobile */
+.column {
+     float: left; /* global css: same on all devices*/
+    width: 100%; /* global css: same  on all devices */
+    
+    /* mobile only */
+    height: 50px;
+    background-color: #000;
+    margin: 10px 0;
+}
+
+/* styles for desktop */
+@media (min-width: 992px) {
+    /* overwrites bg color on 18th line */
+    .column {
+        background-color: #0997d3; /* blue */
+        
+    }
+}
+
+/* styles for tablet */
+@media (min-width: 768px) {
+    .column {
+        /* overwrites above margin, width and bg color */
+        width: 30%;
+        margin: 10px;
+         background-color: #e84610; /* red */
+    }
+}
+
+/* THIS IS NOT THE CORRECT ORDER FOR CBG COLOR DESIRED 
+
+PLEASE HAVE A LOOK ON MAIN2.CSS FOR THAT */
